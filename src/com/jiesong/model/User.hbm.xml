@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model">
+
+    <class name="User" table="USERINFO">
+        <id name="id" column="EVENT_ID">
+            <generator class="native" />
+        </id>
+        <property name="title" />
+        <property name="date" type="timestamp" column="EVENT_DATE" />
+    </class>
+
+</hibernate-mapping>
